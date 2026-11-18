@@ -1,0 +1,4 @@
+method,mean_final_best_reward,std_final_best_reward,fraction_runs_success,mean_evaluations_to_first_success_among_successes,successes_over_runs,mean_runtime_seconds
+random,0.6315999999999999,0.5178733435889513,0.2,39.0,1/5,0.03244344159029424
+hill,0.7415999999999999,0.5147842266425808,0.4,181.0,2/5,0.0305394830647856
+reinforce,0.4,0.0,0.0,,0/5,0.6798718752339482

@@ -1,0 +1,76 @@
+method,seed,budget,final_best_reward,best_success,first_success_evaluation,runtime_seconds,best_program_id,best_program_text
+random,0,500,1.562,True,6,0.030064209131523967,0-0-5-1-5-2-5-0-2,"IF front_clear -> move
+IF not_right_clear -> turn_left
+IF not_right_clear -> turn_right
+IF not_right_clear -> move
+ELSE -> turn_right"
+random,1,500,1.562,True,80,0.02999274991452694,0-0-4-2-0-2-2-2-2,"IF front_clear -> move
+IF not_left_clear -> turn_right
+IF front_clear -> turn_right
+IF right_clear -> turn_right
+ELSE -> turn_right"
+random,2,500,1.562,True,14,0.03039274993352592,0-0-4-2-0-1-4-0-2,"IF front_clear -> move
+IF not_left_clear -> turn_right
+IF front_clear -> turn_left
+IF not_left_clear -> move
+ELSE -> turn_right"
+random,3,500,1.562,True,41,0.02981837489642203,0-0-0-1-0-2-0-2-2,"IF front_clear -> move
+IF front_clear -> turn_left
+IF front_clear -> turn_right
+IF front_clear -> turn_right
+ELSE -> turn_right"
+random,4,500,1.562,True,21,0.02974662510678172,3-2-3-0-0-0-5-2-0,"IF not_front_clear -> turn_right
+IF not_front_clear -> move
+IF front_clear -> move
+IF not_right_clear -> turn_right
+ELSE -> move"
+hill,0,500,1.562,True,19,0.02525895810686052,3-2-0-0-4-1-3-1-1,"IF not_front_clear -> turn_right
+IF front_clear -> move
+IF not_left_clear -> turn_left
+IF not_front_clear -> turn_left
+ELSE -> turn_left"
+hill,1,500,1.562,True,15,0.023896666010841727,1-2-0-0-0-1-3-2-2,"IF left_clear -> turn_right
+IF front_clear -> move
+IF front_clear -> turn_left
+IF not_front_clear -> turn_right
+ELSE -> turn_right"
+hill,2,500,1.562,True,17,0.02538879099301994,0-0-0-1-1-2-5-1-2,"IF front_clear -> move
+IF front_clear -> turn_left
+IF left_clear -> turn_right
+IF not_right_clear -> turn_left
+ELSE -> turn_right"
+hill,3,500,1.562,True,18,0.026048334082588553,3-2-4-0-2-2-3-2-2,"IF not_front_clear -> turn_right
+IF not_left_clear -> move
+IF right_clear -> turn_right
+IF not_front_clear -> turn_right
+ELSE -> turn_right"
+hill,4,500,1.562,True,8,0.024753750069066882,1-2-0-0-3-2-1-0-0,"IF left_clear -> turn_right
+IF front_clear -> move
+IF not_front_clear -> turn_right
+IF left_clear -> move
+ELSE -> move"
+reinforce,0,500,1.562,True,4,0.7016930421814322,1-2-1-0-0-0-0-0-2,"IF left_clear -> turn_right
+IF left_clear -> move
+IF front_clear -> move
+IF front_clear -> move
+ELSE -> turn_right"
+reinforce,1,500,1.562,True,2,0.6546532919164747,0-0-2-2-0-2-5-0-1,"IF front_clear -> move
+IF right_clear -> turn_right
+IF front_clear -> turn_right
+IF not_right_clear -> move
+ELSE -> turn_left"
+reinforce,2,500,1.562,True,15,0.6563138749916106,3-2-4-0-2-2-2-2-2,"IF not_front_clear -> turn_right
+IF not_left_clear -> move
+IF right_clear -> turn_right
+IF right_clear -> turn_right
+ELSE -> turn_right"
+reinforce,3,500,1.562,True,188,0.6563040830660611,3-2-4-0-3-0-4-0-0,"IF not_front_clear -> turn_right
+IF not_left_clear -> move
+IF not_front_clear -> move
+IF not_left_clear -> move
+ELSE -> move"
+reinforce,4,500,1.562,True,1,0.6658011670224369,3-2-0-0-3-1-4-2-0,"IF not_front_clear -> turn_right
+IF front_clear -> move
+IF not_front_clear -> turn_left
+IF not_left_clear -> turn_right
+ELSE -> move"

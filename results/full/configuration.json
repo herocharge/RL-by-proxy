@@ -1,0 +1,125 @@
+{
+  "budget_per_method_seed": 500,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "max_steps": 100,
+  "restart_after_failures": 30,
+  "equal_reward_hill_policy": "reject",
+  "maze": [
+    "########",
+    "#...#..#",
+    "#......#",
+    "#.#.#..#",
+    "#.#....#",
+    "#....###",
+    "#..#.###",
+    "########"
+  ],
+  "start": [
+    1,
+    1,
+    1
+  ],
+  "checkpoints": [
+    [
+      2,
+      1
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      2
+    ]
+  ],
+  "goal": [
+    6,
+    4
+  ],
+  "validation": {
+    "maze": [
+      "########",
+      "#...#..#",
+      "#......#",
+      "#.#.#..#",
+      "#.#....#",
+      "#....###",
+      "#..#.###",
+      "########"
+    ],
+    "start": [
+      1,
+      1,
+      1
+    ],
+    "checkpoints": [
+      [
+        2,
+        1
+      ],
+      [
+        5,
+        1
+      ],
+      [
+        5,
+        2
+      ]
+    ],
+    "goal": [
+      6,
+      4
+    ],
+    "reference_program": "0-0-5-1-1-2-3-1-2",
+    "reference_text": "IF front_clear -> move\nIF not_right_clear -> turn_left\nIF left_clear -> turn_right\nIF not_front_clear -> turn_left\nELSE -> turn_right",
+    "reference_reward": 1.558,
+    "reference_success": true,
+    "reference_steps": 21,
+    "reference_checkpoints": 3,
+    "constant_actions": [
+      {
+        "action": "move",
+        "reward": -0.2,
+        "success": false
+      },
+      {
+        "action": "turn_left",
+        "reward": -0.2,
+        "success": false
+      },
+      {
+        "action": "turn_right",
+        "reward": -0.2,
+        "success": false
+      }
+    ],
+    "small_programs": {
+      "1": {
+        "enumerated": 54,
+        "successful": 0,
+        "best_reward": 0.4
+      },
+      "2": {
+        "enumerated": 972,
+        "successful": 0,
+        "best_reward": 0.4
+      }
+    },
+    "deterministic": true,
+    "shortest_all_checkpoint_path_steps": 11
+  },
+  "python": "3.11.14 (main, Feb  6 2026, 18:25:35) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "numpy": "2.4.2",
+  "torch": "2.11.0",
+  "matplotlib": "3.10.8",
+  "cuda_used": false,
+  "device": "CPU"
+}

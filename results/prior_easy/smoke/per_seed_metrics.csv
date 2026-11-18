@@ -1,0 +1,16 @@
+method,seed,budget,final_best_reward,best_success,first_success_evaluation,runtime_seconds,best_program_id,best_program_text
+random,0,25,1.562,True,6,0.0014744580257683992,0-0-5-1-5-2-5-0-2,"IF front_clear -> move
+IF not_right_clear -> turn_left
+IF not_right_clear -> turn_right
+IF not_right_clear -> move
+ELSE -> turn_right"
+hill,0,25,1.562,True,19,0.0014067080337554216,3-2-0-0-4-1-3-1-1,"IF not_front_clear -> turn_right
+IF front_clear -> move
+IF not_left_clear -> turn_left
+IF not_front_clear -> turn_left
+ELSE -> turn_left"
+reinforce,0,25,1.546,True,4,0.04173062485642731,3-1-1-1-5-0-3-0-0,"IF not_front_clear -> turn_left
+IF left_clear -> turn_left
+IF not_right_clear -> move
+IF not_front_clear -> move
+ELSE -> move"
